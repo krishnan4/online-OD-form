@@ -27,9 +27,6 @@ Email Sending: smtplib for SMTP-based email delivery
 Environment Management: python-dotenv for handling environment variables
 Deployment: Compatible with local development and production servers (e.g., Gunicorn, Heroku)
 Project Structure
-text
-
-Copy
 Online-OD-Form/
 ├── app.py                # Main Flask application
 ├── templates/
@@ -44,50 +41,38 @@ Git (for cloning the repository)
 Installation
 Clone the Repository:
 bash
-
-Copy
 git clone https://github.com/your-username/Online-OD-Form.git
 cd Online-OD-Form
 Set Up a Virtual Environment (recommended):
 bash
-
-Copy
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install Dependencies:
-bash
-
-
+basH
 pip install -r requirements.txt
 Or manually install:
 bash
-
-
 pip install flask python-dotenv
 Configure Environment Variables:
 Create a .env file in the project root:
 bash
-
-
 touch .env
 Add the following, replacing with your email credentials:
-text
-
 
 EMAIL_ADDRESS=your_email@gmail.com
 EMAIL_PASSWORD=your_app_specific_password
 Note: For Gmail, generate an App Password:
 Go to [Google Account > Security > 2-Step Verification > App Passwords](https://myaccount.google.com/security).
 Create a new App Password for "Mail" or "Other (Custom)" and use it as EMAIL_PASSWORD.
+
 Run the Application:
 bash
-
-
 python app.py
 Open http://127.0.0.1:5000 in your browser to access the form.
 Usage
 Navigate to http://127.0.0.1:5000 in your browser.
 Fill out the OD form with the required details.
+
 Submit the form:
 On success, you'll see a "Form submitted successfully!" message, and the form data will be emailed to the recipient (default: hariad109@rmkcet.ac.in).
 On error (e.g., invalid input or email failure), an error message will be displayed.
@@ -105,8 +90,6 @@ To deploy the application to a production server (e.g., Heroku, AWS, or Render):
 
 Use a WSGI server like Gunicorn:
 bash
-
-
 pip install gunicorn
 gunicorn -w 4 app:app
 Configure environment variables on the hosting platform.
