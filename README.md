@@ -88,6 +88,11 @@ Update SMTP_SERVER and SMTP_PORT in app.py for non-Gmail providers (e.g., Outloo
 Deployment
 To deploy the application to a production server (e.g., Heroku, AWS, or Render):
 
+
+
+
+![image](https://github.com/user-attachments/assets/f5bb4d90-1979-4dc6-a043-281429f1ce24)
+
 Use a WSGI server like Gunicorn:
 bash
 pip install gunicorn
