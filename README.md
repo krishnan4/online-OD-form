@@ -1,26 +1,45 @@
-# online-OD-Overview
-The Online Out Duty (OD) Form is a web-based application designed to streamline the process of submitting student out-duty requests. Built using Flask, a lightweight Python web framework, this application allows students to fill out an OD form with details such as student ID, department, event type, and dates. Upon submission, the form data is sent via email to a specified recipient (e.g., a faculty or administrator) for approval. The application features a user-friendly interface styled with Tailwind CSS and includes server-side validation to ensure data integrity.
-
+📝 Online OD Form
+-----
+A Flask-based web application for submitting student Out-Duty requests via email.
+This project helps educational institutions automate and digitize the out-duty request process. Students can submit a clean and responsive form, and the submission is sent to a designated email for approval.
 This project is ideal for educational institutions looking to digitize and automate their out-duty request process. It is secure, easy to deploy, and customizable for different institutional needs.
 
-Features
-User-Friendly Form: A clean and responsive form for students to submit out-duty requests, including fields for:
+---
+
+🚀 Features
+User-Friendly Form: Responsive form with fields for:
+
 Student ID (8-digit validation)
+
 Student Name
-Department (dropdown with options like CSE, ECE, etc.)
+
+Department (dropdown: CSE, ECE, etc.)
+
 Email
+
 Number of Days
+
 Leaving and Return Times
+
 Date
+
 OD Count
 
 Event Type
-Attending University
-Email Notification: Automatically sends form data to a designated email address using SMTP (e.g., Gmail).
-Server-Side Validation: Ensures valid inputs (e.g., 8-digit student ID, positive numbers for days and OD count).
-Success/Error Feedback: Displays user-friendly success or error messages after form submission.
-Secure Configuration: Uses environment variables (via .env) to securely store sensitive information like email credentials.
-Responsive Design: Styled with Tailwind CSS for a modern, mobile-friendly interface.
+
+Attending University (Yes/No)
+
+Email Notification: Sends the filled form via SMTP (e.g., Gmail) to a faculty/admin.
+
+Validation: Server-side validation for inputs like student ID, positive number values, and required fields.
+
+Feedback Messages: Displays success or error messages after form submission.
+
+Secure Configuration: Uses .env file to securely manage email credentials.
+
+Responsive UI: Styled using Tailwind CSS (via CDN) for mobile and desktop views.
+
+ ----
 Tech Stack
 Backend: Python 3.11, Flask
 Frontend: HTML, Tailwind CSS (via CDN)
